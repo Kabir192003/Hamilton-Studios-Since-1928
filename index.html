@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/organic-96c5a7ae-d749-4f75-a852-bbb15d428e19/styles.css">
+  <script src="_ds/organic-96c5a7ae-d749-4f75-a852-bbb15d428e19/_ds_bundle.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Playball&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    html, body { margin: 0; padding: 0; background: #201e1d; }
+    :root { --font-heading: 'Cormorant Garamond', 'Caprasimo', serif; }
+    h1, h2, h3 { font-weight: 500 !important; letter-spacing: 0.005em; }
+    a { color: var(--color-accent-700); }
+    a:hover { color: var(--color-accent-600); }
+    @keyframes hs-marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+    @keyframes hs-bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(8px); } }
+    @keyframes hs-grain { 0% { transform: translate(0, 0); } 25% { transform: translate(-2%, -3%); } 50% { transform: translate(3%, 2%); } 75% { transform: translate(-3%, 3%); } 100% { transform: translate(2%, -2%); } }
+    body::after { content: ''; position: fixed; inset: -10%; width: 120%; height: 120%; pointer-events: none; z-index: 9999; opacity: 0.32; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.45 0 0 0 0 0.38 0 0 0 0 0.3 0 0 0 0.5 0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)'/%3E%3C/svg%3E"); animation: hs-grain 1.2s steps(4) infinite; }
+    .hs-develop { filter: sepia(0.55) saturate(0.55) contrast(0.72) brightness(1.12); transition: filter 2.2s cubic-bezier(0.25, 0.6, 0.3, 1); }
+    .hs-develop.hs-developed { filter: sepia(0.14) saturate(0.86) contrast(0.98) brightness(1.01); }
+  </style>
+</helmet>
+<div style="font-family: var(--font-body); color: var(--color-text); background: var(--color-neutral-900);">
+
+  <!-- HERO (sticky curtain) -->
+  <div data-screen-label="Hero" data-hero="" style="position: sticky; top: 0; min-height: 100vh; overflow: hidden; box-sizing: border-box; background: var(--color-neutral-900); color: var(--color-bg); display: flex; flex-direction: column; z-index: 0;">
+    <img data-hero-img="" src="images/facade-wide.jpg" alt="The Hamilton Studios facade at Ballard Estate" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 40%; transform: scale(1.06); will-change: transform; filter: sepia(0.18) saturate(0.9);">
+    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(26, 19, 13, 0.6) 0%, rgba(26, 19, 13, 0.24) 45%, rgba(26, 19, 13, 0.82) 100%);"></div>
+    <div style="display: flex; align-items: center; justify-content: space-between; padding: 28px 48px; position: relative; z-index: 2;">
+      <div style="font-family: var(--font-heading); font-size: 22px; letter-spacing: 0.04em; color: var(--color-bg);">Hamilton Studios</div>
+      <div style="display: flex; gap: 28px; align-items: center; font-size: 15px; letter-spacing: 0.08em; text-transform: uppercase;">
+        <a href="#story" style="color: var(--color-neutral-300); text-decoration: none;" style-hover="color: var(--color-bg);">Story</a>
+        <a href="#cameras" style="color: var(--color-neutral-300); text-decoration: none;" style-hover="color: var(--color-bg);">Cameras</a>
+        <a href="#archive" style="color: var(--color-neutral-300); text-decoration: none;" style-hover="color: var(--color-bg);">Archive</a>
+        <a href="#visit" style="color: var(--color-bg); text-decoration: none; border: 1.5px solid var(--color-neutral-600); border-radius: 999px; padding: 10px 22px;" style-hover="background: var(--color-accent); border-color: var(--color-accent);">Visit</a>
+      </div>
+    </div>
+    <div data-hero-content="" style="flex: 1; display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-start; padding: 120px 72px 90px; max-width: 1240px; width: 100%; margin: 0 auto; box-sizing: border-box; position: relative; z-index: 1;">
+      <div style="display: inline-flex; align-items: center; gap: 10px; border: 1.5px solid rgba(245, 234, 216, 0.4); background: rgba(26, 19, 13, 0.3); backdrop-filter: blur(3px); border-radius: 999px; padding: 8px 18px; font-size: 14px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-neutral-100); margin-bottom: 30px;">Est. 1928 · Ballard Estate, Bombay</div>
+      <h1 style="font-family: 'Playball', cursive; font-weight: 400 !important; font-size: clamp(48px, 6vw, 92px); line-height: 1.14; margin: 0 0 26px; color: var(--color-bg); max-width: 15ch; text-shadow: 0 2px 6px rgba(0, 0, 0, 0.55), 0 6px 22px rgba(0, 0, 0, 0.55), 0 14px 48px rgba(0, 0, 0, 0.45);">The portrait house of old Bombay.</h1>
+      <p style="font-size: 19px; line-height: 1.65; color: var(--color-neutral-100); max-width: 46ch; margin: 0 0 38px; text-shadow: 0 1px 16px rgba(0, 0, 0, 0.55);">Behind a wrought-iron gate on a tree-lined lane, India&rsquo;s oldest photography studio has kept a single promise for nearly a century: <em style="color: var(--color-bg); font-style: normal; border-bottom: 2px solid var(--color-accent);">one shot, sure shot.</em></p>
+      <div style="display: flex; gap: 16px; align-items: center;">
+        <a href="#visit" class="btn btn-primary" style="text-decoration: none; padding: 16px 32px; font-size: 17px;">Sit for a portrait</a>
+        <a href="#story" class="btn btn-ghost" style="text-decoration: none; padding: 16px 28px; font-size: 17px; color: var(--color-neutral-100); border: 1.5px solid rgba(245, 234, 216, 0.35); border-radius: 999px;">Our story</a>
+      </div>
+    </div>
+    <div style="position: absolute; left: 50%; bottom: 22px; transform: translateX(-50%); color: var(--color-neutral-400); font-size: 13px; letter-spacing: 0.22em; text-transform: uppercase; display: flex; flex-direction: column; align-items: center; gap: 6px; z-index: 1;">
+      <span>Scroll</span>
+      <span style="display: block; width: 2px; height: 26px; background: var(--color-neutral-500); border-radius: 2px; animation: hs-bob 2.2s ease-in-out infinite;"></span>
+    </div>
+  </div>
+
+  <!-- SHEET that scrolls over the hero -->
+  <div style="position: relative; z-index: 1; background: var(--color-bg); border-radius: 40px 40px 0 0; box-shadow: 0 -24px 60px rgba(32, 30, 29, 0.35);">
+
+    <sc-if value="{{ showMarquee }}" hint-placeholder-val="{{ true }}">
+      <div data-screen-label="Marquee" style="overflow: hidden; padding: 22px 0; border-bottom: 1.5px solid var(--color-neutral-200); border-radius: 40px 40px 0 0;">
+        <div style="display: flex; width: max-content; animation: hs-marquee 26s linear infinite; font-family: var(--font-heading); font-size: 26px; color: var(--color-accent-700); white-space: nowrap;">
+          <span style="padding-right: 48px;">One shot, sure shot &nbsp;&#10045;&nbsp; Est. 1928 &nbsp;&#10045;&nbsp; Ballard Estate, Bombay &nbsp;&#10045;&nbsp; One shot, sure shot &nbsp;&#10045;&nbsp; Est. 1928 &nbsp;&#10045;&nbsp; Ballard Estate, Bombay &nbsp;&#10045;&nbsp;</span>
+          <span style="padding-right: 48px;">One shot, sure shot &nbsp;&#10045;&nbsp; Est. 1928 &nbsp;&#10045;&nbsp; Ballard Estate, Bombay &nbsp;&#10045;&nbsp; One shot, sure shot &nbsp;&#10045;&nbsp; Est. 1928 &nbsp;&#10045;&nbsp; Ballard Estate, Bombay &nbsp;&#10045;&nbsp;</span>
+        </div>
+      </div>
+    </sc-if>
+
+    <!-- STORY -->
+    <section id="story" data-screen-label="Story" style="background: oklch(0.925 0.021 205); border-radius: 40px; margin: 48px 24px 0; padding: 110px 48px;">
+      <div style="max-width: 1160px; margin: 0 auto; display: grid; grid-template-columns: 1fr 0.85fr; gap: 80px; align-items: center;">
+      <div data-reveal="" style="opacity: 0; transform: translateY(30px); transition: opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1), transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);">
+        <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 22px;">
+          <span style="width: 44px; height: 44px; border-radius: 999px; background: oklch(0.42 0.045 215); color: oklch(0.94 0.015 205); display: grid; place-items: center; font-family: var(--font-heading); font-size: 17px;">I</span>
+          <span style="font-size: 14px; letter-spacing: 0.2em; text-transform: uppercase; color: oklch(0.42 0.045 215); font-weight: 600;">The house</span>
+        </div>
+        <h2 style="font-family: var(--font-heading); font-weight: 400; font-size: clamp(38px, 4vw, 56px); line-height: 1.06; margin: 0 0 26px; color: oklch(0.3 0.035 220);">Walk in, and it is 1928 again.</h2>
+        <p style="font-size: 18px; line-height: 1.75; margin: 0 0 20px; color: oklch(0.36 0.03 220);">Sir Victor Sassoon opened these rooms to photograph the maharajas, industrialists and film stars of a young, electric Bombay, and named the studio for Lady Hamilton, the most photographed woman of her age.</p>
+        <p style="font-size: 18px; line-height: 1.75; margin: 0; color: oklch(0.36 0.03 220);">The chalk-green parlour still wears its original panelling. The chequered stone floor has held the feet of Ambedkar, JRD Tata, Madhubala and the Dalai Lama. Portraits of them all watch you from the walls.</p>
+        <div style="display: flex; gap: 16px; align-items: flex-start; margin-top: 32px;">
+          <span style="font-family: var(--font-heading); font-size: 46px; line-height: 0.8; color: oklch(0.42 0.045 215);">&ldquo;</span>
+          <div>
+            <p style="font-family: var(--font-heading); font-weight: 400; font-size: 22px; line-height: 1.4; margin: 0 0 8px; color: oklch(0.28 0.035 220);">I read the person first. Who they are, how they carry themselves. The photograph comes after.</p>
+            <p style="font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase; color: oklch(0.45 0.03 210); margin: 0;">Ajita Madhavji &middot; Proprietor</p>
+          </div>
+        </div>
+      </div>
+      <figure data-reveal="" style="margin: 0; opacity: 0; transform: translateY(30px); transition: opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.12s, transform 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.12s;">
+        <div style="border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md);">
+          <img class="hs-develop" src="images/parlour.png" alt="The parlour, with its wall of famous portraits" style="display: block; width: 100%; height: auto;">
+        </div>
+        <figcaption style="display: flex; justify-content: space-between; gap: 16px; font-size: 15px; color: oklch(0.45 0.03 210); margin-top: 14px; padding: 0 4px;"><span>The parlour. Every portrait on that wall was made in this room.</span><span style="font-family: 'Courier Prime', 'Courier New', monospace; font-size: 12.5px; letter-spacing: 0.08em; white-space: nowrap; color: oklch(0.5 0.03 210);">PLATE No. 0002</span></figcaption>
+      </figure>
+      </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section data-screen-label="Timeline" style="max-width: 860px; margin: 0 auto; padding: 40px 48px 120px;">
+      <h2 data-reveal="" style="font-family: var(--font-heading); font-weight: 400; font-size: clamp(34px, 3.6vw, 48px); margin: 0 0 56px; opacity: 0; transform: translateY(30px); transition: opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1), transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);">Ninety-eight years, one address.</h2>
+      <div style="display: flex; flex-direction: column; gap: 0;">
+        <sc-for list="{{ era }}" as="e" hint-placeholder-count="5">
+          <div data-reveal="" style="display: grid; grid-template-columns: 120px 36px 1fr; gap: 0 28px; align-items: start; position: relative; padding-bottom: 64px; opacity: 0; transform: translateY(30px); transition: opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1), transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);">
+            <div style="text-align: right; padding-top: 2px;">
+              <div style="font-family: var(--font-heading); font-weight: 500; font-size: 38px; line-height: 1; color: var(--color-accent-700); font-variant-numeric: oldstyle-nums;">{{ e.year }}</div>
+            </div>
+            <div style="position: relative; align-self: stretch;">
+              <span style="position: absolute; left: 50%; top: 22px; bottom: -8px; width: 1px; background: linear-gradient(180deg, var(--color-neutral-300), var(--color-neutral-200));"></span>
+              <span style="position: absolute; left: 50%; top: 8px; width: 9px; height: 9px; transform: translateX(-50%) rotate(45deg); background: {{ e.bg }}; box-shadow: 0 0 0 5px var(--color-bg), 0 0 0 6px var(--color-neutral-300);"></span>
+            </div>
+            <div style="padding-top: 4px;">
+              <h3 style="font-family: var(--font-heading); font-weight: 500; font-size: 27px; margin: 0 0 8px;">{{ e.title }}</h3>
+              <p style="font-size: 17px; line-height: 1.7; color: var(--color-neutral-700); margin: 0; max-width: 56ch;">{{ e.body }}</p>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </section>
+
+    <!-- CAMERAS -->
+    <section id="cameras" data-screen-label="Cameras" style="background: var(--color-neutral-100); border-radius: 40px; margin: 0 24px; padding: 110px 48px;">
+      <div style="max-width: 1160px; margin: 0 auto;">
+        <div data-reveal="" style="max-width: 60ch; margin-bottom: 64px; opacity: 0; transform: translateY(30px); transition: opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1), transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);">
+          <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 22px;">
+            <span style="width: 44px; height: 44px; border-radius: 999px; background: var(--color-accent-2); color: var(--color-bg); display: grid; place-items: center; font-family: var(--font-heading); font-size: 17px;">II</span>
+            <span style="font-size: 14px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--color-accent-2-700); font-weight: 600;">The instruments</span>
+          </div>
+          <h2 style="font-family: var(--font-heading); font-weight: 400; font-size: clamp(38px, 4vw, 56px); line-height: 1.06; margin: 0 0 22px;">The elders of the house, still working.</h2>
+          <p style="font-size: 18px; line-height: 1.75; color: var(--color-neutral-800); margin: 0;">The kit has grown with the decades, but two legacy instruments still hold court on the studio floor, and they set the tempo of every sitting here: compose, wait, one exposure.</p>
+          <div style="display: flex; gap: 16px; align-items: flex-start; margin-top: 30px;">
+            <span style="font-family: var(--font-heading); font-size: 46px; line-height: 0.8; color: var(--color-accent-2);">&ldquo;</span>
+            <p style="font-family: var(--font-heading); font-weight: 400; font-size: 22px; line-height: 1.4; margin: 0; color: var(--color-neutral-800);">A portrait cannot be hurried. I take my time with every face, until its true essence shows itself.</p>
+          </div>
+        </div>
+        <div style="display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 32px;">
+          <div data-reveal="" style="min-width: 0; background: var(--color-bg); border-radius: var(--radius-lg); padding: 28px; box-shadow: var(--shadow-sm); opacity: 0; transform: translateY(30px); transition: opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1), transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);">
+            <div style="height: 300px; margin-bottom: 26px;">
+              <x-import component-from-global-scope="image-slot" from="./image-slot.js" id="kodak-camera" shape="rounded" radius="20" placeholder="Drop a photo of the Kodak box camera" hint-size="100%,300px"></x-import>
+            </div>
+            <div style="font-family: 'Courier Prime', 'Courier New', monospace; font-size: 12.5px; letter-spacing: 0.08em; color: var(--color-neutral-500); margin-bottom: 10px;">PLATE No. 0001 &middot; KODAK, 1928</div>
+            <div style="display: flex; align-items: baseline; gap: 12px; margin-bottom: 10px;">
+              <h3 style="font-family: var(--font-heading); font-weight: 400; font-size: 28px; margin: 0;">The Kodak</h3>
+              <span class="tag tag-accent" style="font-size: 13px;">On duty since 1928</span>
+            </div>
+            <p style="font-size: 17px; line-height: 1.7; color: var(--color-neutral-700); margin: 0;">The original box plate camera Sassoon installed on opening day, still standing on the studio floor, still in working order, still making portraits the slow way.</p>
+          </div>
+          <div data-reveal="" style="min-width: 0; background: var(--color-bg); border-radius: var(--radius-lg); padding: 28px; box-shadow: var(--shadow-sm); opacity: 0; transform: translateY(30px); transition: opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.12s, transform 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.12s;">
+            <div style="height: 300px; margin-bottom: 26px;">
+              <x-import component-from-global-scope="image-slot" from="./image-slot.js" id="linhof-camera" shape="rounded" radius="20" placeholder="Drop a photo of the Linhof" hint-size="100%,300px"></x-import>
+            </div>
+            <div style="font-family: 'Courier Prime', 'Courier New', monospace; font-size: 12.5px; letter-spacing: 0.08em; color: var(--color-neutral-500); margin-bottom: 10px;">PLATE No. 0004 &middot; LINHOF, GERMANY</div>
+            <div style="display: flex; align-items: baseline; gap: 12px; margin-bottom: 10px;">
+              <h3 style="font-family: var(--font-heading); font-weight: 400; font-size: 28px; margin: 0;">The Linhof</h3>
+              <span class="tag tag-accent-2" style="font-size: 13px;">Large format</span>
+            </div>
+            <p style="font-size: 17px; line-height: 1.7; color: var(--color-neutral-700); margin: 0;">German large-format precision for the formal sitting, with a negative so generous that a portrait can be printed life-size and hand-tinted, as it always has been.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAMOUS SITTERS -->
+    <section data-screen-label="Sitters" style="padding: 110px 0 20px; overflow: hidden;">
+      <div style="text-align: center; margin-bottom: 44px;">
+        <div style="display: inline-flex; align-items: center; gap: 20px; font-size: 13px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--color-neutral-600);">
+          <span style="display: block; width: 64px; height: 1px; background: var(--color-neutral-300);"></span>
+          <span>&#10045;&nbsp; They sat here &nbsp;&#10045;</span>
+          <span style="display: block; width: 64px; height: 1px; background: var(--color-neutral-300);"></span>
+        </div>
+      </div>
+      <div style="position: relative;">
+        <div style="position: absolute; left: 0; top: 0; bottom: 0; width: 140px; background: linear-gradient(90deg, var(--color-bg), transparent); z-index: 1; pointer-events: none;"></div>
+        <div style="position: absolute; right: 0; top: 0; bottom: 0; width: 140px; background: linear-gradient(270deg, var(--color-bg), transparent); z-index: 1; pointer-events: none;"></div>
+        <div style="display: flex; width: max-content; animation: hs-marquee 60s linear infinite; white-space: nowrap; font-family: var(--font-heading); font-weight: 500; font-size: clamp(38px, 4.4vw, 64px); color: var(--color-neutral-800); align-items: baseline;">
+          <sc-for list="{{ sittersLoop }}" as="s" hint-placeholder-count="6">
+            <span style="display: inline-flex; align-items: baseline; gap: 36px; padding-right: 36px;"><span style="font-style: italic;">{{ s.name }}</span><span style="font-family: 'Courier Prime', 'Courier New', monospace; font-size: 13px; letter-spacing: 0.14em; color: var(--color-accent-700); font-style: normal;">{{ s.year }}</span></span>
+          </sc-for>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUOTE -->
+    <section data-screen-label="Quote" style="padding: 150px 48px; text-align: center;">
+      <div data-reveal="" style="max-width: 900px; margin: 0 auto; opacity: 0; transform: translateY(30px); transition: opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1), transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);">
+        <div style="width: 64px; height: 64px; border-radius: 999px; background: var(--color-accent-2-200); color: var(--color-accent-2-800); display: grid; place-items: center; font-family: var(--font-heading); font-size: 34px; margin: 0 auto 34px;">&rdquo;</div>
+        <p style="font-family: var(--font-heading); font-weight: 400; font-size: clamp(34px, 4.4vw, 60px); line-height: 1.18; margin: 0 0 30px; color: var(--color-accent-2-800);">We always have a way of making people smile.</p>
+        <p style="font-size: 16px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-neutral-600); margin: 0;">The house promise &middot; The Madhavji family</p>
+      </div>
+    </section>
+
+    <!-- ARCHIVE -->
+    <section id="archive" data-screen-label="Archive" style="max-width: 1160px; margin: 0 auto; padding: 20px 48px 130px; display: grid; grid-template-columns: 0.85fr 1fr; gap: 80px; align-items: center;">
+      <figure data-reveal="" style="margin: 0; opacity: 0; transform: translateY(30px); transition: opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1), transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);">
+        <div style="border-radius: 190px 190px var(--radius-lg) var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md);">
+          <img class="hs-develop" src="images/hall.png" alt="The long gallery with its chequered stone floor" style="display: block; width: 100%; height: auto;">
+        </div>
+        <figcaption style="display: flex; justify-content: space-between; gap: 16px; font-size: 15px; color: var(--color-neutral-600); margin-top: 14px; padding: 0 4px;"><span>The gallery, restored and open for exhibitions and shoots.</span><span style="font-family: 'Courier Prime', 'Courier New', monospace; font-size: 12.5px; letter-spacing: 0.08em; white-space: nowrap; color: var(--color-neutral-500);">PLATE No. 0003</span></figcaption>
+      </figure>
+      <div data-reveal="" style="opacity: 0; transform: translateY(30px); transition: opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.12s, transform 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.12s;">
+        <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 22px;">
+          <span style="width: 44px; height: 44px; border-radius: 999px; background: var(--color-accent); color: var(--color-bg); display: grid; place-items: center; font-family: var(--font-heading); font-size: 17px;">III</span>
+          <span style="font-size: 14px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--color-accent-700); font-weight: 600;">The archive</span>
+        </div>
+        <div style="font-family: var(--font-heading); font-size: clamp(64px, 7vw, 104px); line-height: 1; color: var(--color-accent); margin-bottom: 8px;"><span data-count="600000">0</span></div>
+        <div style="font-size: 15px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-neutral-600); margin-bottom: 28px;">Negatives, and counting</div>
+        <p style="font-size: 18px; line-height: 1.75; color: var(--color-neutral-800); margin: 0 0 20px;">Glass plates and celluloid going back to opening day: royalty and refugees, wedding parties and passport hopefuls, all of them Bombay. It is one of the most significant photographic collections in India.</p>
+        <p style="font-size: 18px; line-height: 1.75; color: var(--color-neutral-800); margin: 0;">The British Library&rsquo;s Endangered Archives Programme is now helping digitise the earliest plates, so a century of faces can be found again by the families who once sat here.</p>
+      </div>
+    </section>
+
+    <!-- VISIT -->
+    <section id="visit" data-screen-label="Visit" style="background: var(--color-accent-2-800); color: var(--color-bg); border-radius: 40px 40px 0 0; padding: 26px 26px 22px;">
+      <div style="border: 1px solid var(--color-accent-2-600); border-radius: 30px; padding: 96px 56px 44px; max-width: 1240px; margin: 0 auto; box-sizing: border-box;">
+        <div data-reveal="" style="text-align: center; margin-bottom: 84px; opacity: 0; transform: translateY(30px); transition: opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1), transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);">
+          <div style="display: flex; align-items: center; justify-content: center; gap: 20px; font-size: 13px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--color-accent-2-200);">
+            <span style="display: block; width: 64px; height: 1px; background: var(--color-accent-2-600);"></span>
+            <span>&#10045;&nbsp; The sitting &nbsp;&#10045;</span>
+            <span style="display: block; width: 64px; height: 1px; background: var(--color-accent-2-600);"></span>
+          </div>
+          <p style="font-family: var(--font-heading); font-weight: 500; font-size: clamp(28px, 3vw, 42px); line-height: 1.28; color: var(--color-accent-2-100); max-width: 26ch; margin: 36px auto 0;">&ldquo;I wait until the light is perfect and the sitter forgets the camera. That is when the true face arrives.&rdquo;</p>
+          <p style="font-size: 13px; letter-spacing: 0.24em; text-transform: uppercase; color: var(--color-accent-2-300); margin: 20px 0 0;">Ajita Madhavji</p>
+        </div>
+        <div style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 72px; align-items: center;">
+          <div data-reveal="" style="opacity: 0; transform: translateY(30px); transition: opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1), transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);">
+            <h2 style="font-family: var(--font-heading); font-weight: 400; font-size: clamp(38px, 4.2vw, 58px); line-height: 1.04; margin: 0 0 24px; color: var(--color-bg);">Your grandmother sat here. So should you.</h2>
+            <p style="font-size: 18px; line-height: 1.75; color: var(--color-accent-2-200); margin: 0 0 36px; max-width: 50ch;">Portrait sittings, restorations of old family photographs, and the gallery for shoots and exhibitions, all by appointment, all under the same high ceilings.</p>
+            <a href="mailto:hamilton1928@hotmail.com" class="btn" style="text-decoration: none; padding: 17px 34px; font-size: 17px; background: var(--color-bg); color: var(--color-accent-2-900); border-radius: 999px; border: none;" style-hover="background: var(--color-accent-2-100);">Book a sitting</a>
+          </div>
+          <div data-reveal="" style="background: var(--color-accent-2-700); border: 1px solid var(--color-accent-2-600); border-radius: var(--radius-lg); padding: 44px; opacity: 0; transform: translateY(30px); transition: opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.12s, transform 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.12s;">
+            <div style="display: flex; flex-direction: column; gap: 30px;">
+              <div>
+                <div style="font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--color-accent-2-200); margin-bottom: 8px;">Find us</div>
+                <div style="font-size: 18px; line-height: 1.6; color: var(--color-accent-2-100);">NTC House, 15 N.M. Marg<br>Ballard Estate, Mumbai 400 001</div>
+              </div>
+              <div>
+                <div style="font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--color-accent-2-200); margin-bottom: 8px;">Write or ring</div>
+                <div style="font-size: 18px; line-height: 1.6;"><a href="tel:+912222610485" style="color: var(--color-accent-2-100); text-decoration: none;" style-hover="color: var(--color-bg);">+91 22 2261 0485</a><br><a href="mailto:hamilton1928@hotmail.com" style="color: var(--color-accent-2-100); text-decoration: none;" style-hover="color: var(--color-bg);">hamilton1928@hotmail.com</a></div>
+              </div>
+              <div>
+                <div style="font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--color-accent-2-200); margin-bottom: 8px;">Hours</div>
+                <div style="font-size: 18px; line-height: 1.6; color: var(--color-accent-2-100);">Monday to Saturday, by appointment</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top: 90px; padding-top: 30px; border-top: 1px solid var(--color-accent-2-600); display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 12px;">
+          <div style="font-family: var(--font-heading); font-size: 18px; color: var(--color-accent-2-100);">Hamilton Studios &middot; Est. 1928</div>
+          <div style="font-size: 15px; color: var(--color-accent-2-300);">One shot, sure shot.</div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showMarquee&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Page&quot;}}">
+class Component extends DCLogic {
+  componentDidMount() {
+    this.io = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        const el = entry.target;
+        el.style.opacity = '1';
+        el.style.transform = 'none';
+        const counter = el.querySelector ? el.querySelector('[data-count]') : null;
+        if (counter && !counter.dataset.done) this.countUp(counter);
+        this.io.unobserve(el);
+      });
+    }, { threshold: 0.15 });
+    this.devIo = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('hs-developed');
+        this.devIo.unobserve(entry.target);
+      });
+    }, { threshold: 0.35 });
+    this.onScroll = () => {
+      const img = document.querySelector('[data-hero-img]');
+      const heroContent = document.querySelector('[data-hero-content]');
+      if (!img) return;
+      const y = window.scrollY, vh = window.innerHeight;
+      const p = Math.min(1, y / vh);
+      img.style.transform = 'scale(' + (1.06 + p * 0.1) + ') translateY(' + (p * 26) + 'px)';
+      if (heroContent) { heroContent.style.opacity = String(1 - p * 1.15); heroContent.style.transform = 'translateY(' + (-p * 40) + 'px)'; }
+    };
+    window.addEventListener('scroll', this.onScroll, { passive: true });
+    // slight delay so elements exist after stream completes
+    setTimeout(() => {
+      document.querySelectorAll('[data-reveal]').forEach((el) => this.io.observe(el));
+      document.querySelectorAll('.hs-develop').forEach((el) => this.devIo.observe(el));
+      this.fitHero();
+    }, 60);
+    this.onResize = () => this.fitHero();
+    window.addEventListener('resize', this.onResize);
+  }
+  fitHero() {
+    const hero = document.querySelector('[data-hero]');
+    if (hero) hero.style.top = Math.min(0, window.innerHeight - hero.offsetHeight) + 'px';
+  }
+  componentWillUnmount() {
+    if (this.io) this.io.disconnect();
+    if (this.devIo) this.devIo.disconnect();
+    window.removeEventListener('resize', this.onResize);
+    window.removeEventListener('scroll', this.onScroll);
+  }
+  countUp(el) {
+    el.dataset.done = '1';
+    const target = parseInt(el.dataset.count, 10);
+    const dur = 1800, t0 = performance.now();
+    const tick = (t) => {
+      const p = Math.min(1, (t - t0) / dur);
+      const eased = 1 - Math.pow(1 - p, 3);
+      el.textContent = Math.round(target * eased).toLocaleString('en-IN');
+      if (p < 1) requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+  }
+  renderVals() {
+    const sitters = [
+      { name: 'Dr. B. R. Ambedkar', year: 'c. 1940' },
+      { name: 'JRD Tata', year: 'c. 1945' },
+      { name: 'Madhubala', year: 'c. 1952' },
+      { name: 'The Dalai Lama', year: 'c. 1960' },
+      { name: 'The Shah of Iran', year: 'c. 1950' },
+      { name: 'Vinod Khanna', year: 'c. 1974' },
+      { name: 'Zeenat Aman', year: 'c. 1976' }
+    ];
+    return {
+      sittersLoop: sitters.concat(sitters),
+      showMarquee: this.props.showMarquee ?? true,
+      era: [
+        { year: '1928', bg: 'var(--color-accent)', title: 'Sassoon opens the doors', body: 'Sir Victor Sassoon establishes the studio at Ballard Estate to photograph the city\u2019s elite, naming it after Lady Hamilton.' },
+        { year: '1947', bg: 'var(--color-accent-2)', title: 'The plates go quiet', body: 'After Independence, Sassoon leaves for England. The archive sits undisturbed in its teak cabinets for a decade.' },
+        { year: '1957', bg: 'var(--color-accent)', title: 'The Madhavjis arrive', body: 'Ranjit Madhavji, cloth merchant by trade and photographer by obsession, buys the studio and everything in it.' },
+        { year: '1980s', bg: 'var(--color-accent-2)', title: 'Ajita takes the chair', body: 'His daughter Ajita Madhavji takes over, keeping the hand-tinted portrait alive when the rest of the world has moved on.' },
+        { year: '2018', bg: 'var(--color-accent)', title: 'The archive wakes up', body: 'A British Library grant begins cleaning and digitising the earliest 25,000 glass-plate negatives, from 1928\u201347.' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>
